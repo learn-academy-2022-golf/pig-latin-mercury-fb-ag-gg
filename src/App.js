@@ -49,9 +49,20 @@ const App = () => {
         //Create a copy of the sting before the letter u.
         //Create a copy of the string after the letter u. 
         return eachWord.substring(eachWord.indexOf("u")+1) + eachWord.substring(0,eachWord.indexOf("u")+1)+"ay"
-        }
+        }        
 
-      //  
+      // Create a conditional statement
+        // That checks for:
+          // Vowels array is size 0
+          // y exists
+      if ( vowelsArray.length == 0 && eachWord.includes('y')) {
+
+        // All the consonants placed to the end
+          // And add 'ay'
+
+        return eachWord.substring(eachWord.indexOf("y")) + 
+           eachWord.substring(0,eachWord.indexOf("y"))+"ay"
+      }      
       
       // ACTION ITEM: this return will be the output of your Pig Latin'd code
       return eachWord 
