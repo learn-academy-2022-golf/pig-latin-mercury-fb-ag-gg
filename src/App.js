@@ -35,8 +35,26 @@ const App = () => {
       if (eachWord[0] === vowelsArray[0]) {
         return eachWord + "way"
       }
+      // Find if qu is in the first sylable 
+      //If qu is in the first sylable then move it to the end of the word and then add ay.
+      //We can start out by writing a conditional statement using if to start.
+      //If the first vowel is a u and the letter before the u is q. 
+      //We can cut the first part string, after the u then add qu-ay in its spot. 
+      //We are 
+
+      if ( vowelsArray[0] === "u") {
+        if(eachWord.indexOf("q") === eachWord.indexOf("u")-1) {
+        console.log("weareinthis")
+        }
+        //Create a copy of the sting before the letter u.
+        //Create a copy of the string after the letter u. 
+        return eachWord.substring(eachWord.indexOf("u")+1) + eachWord.substring(0,eachWord.indexOf("u")+1)+"ay"
+        }
+
+      //  
+      
       // ACTION ITEM: this return will be the output of your Pig Latin'd code
-      return eachWord
+      return eachWord 
     })
 
     // NO MODIFICATION NEEDED: once the code has been modified it gets joined from an array back to a string
