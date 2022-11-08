@@ -1,3 +1,14 @@
+### Problems that still need to be fixed
+
+Any word that has y as a vowel but also has other vowels will show up incorrectly because we are only testing for words that have y as the only vowel.
+
+Mixed punctiation such as !. will break as we are only looking for single punctuation.
+
+Any integer will place an ay behind the number which may need to be changed depending on preferences.
+
+Any other symbols will also break the code.
+
+
 # 🐷 Pig Latin Activity
 
 [Oday ouyay eakspay igpay atinlay?](http://www.wikihow.com/Speak-Pig-Latin)
