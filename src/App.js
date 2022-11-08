@@ -45,10 +45,11 @@ const App = () => {
       if ( vowelsArray[0] === "u") {
         if(eachWord.indexOf("q") === eachWord.indexOf("u")-1) {
         console.log("weareinthis")
-        }
+        return eachWord.substring(eachWord.indexOf("u")+1) + eachWord.substring(0,eachWord.indexOf("u")+1)+"ay"
+      }
         //Create a copy of the sting before the letter u.
         //Create a copy of the string after the letter u. 
-        return eachWord.substring(eachWord.indexOf("u")+1) + eachWord.substring(0,eachWord.indexOf("u")+1)+"ay"
+        
         }        
 
       // Create a conditional statement
@@ -62,11 +63,15 @@ const App = () => {
 
         return eachWord.substring(eachWord.indexOf("y")) + 
            eachWord.substring(0,eachWord.indexOf("y"))+"ay"
-      }      
-      
+          
+      } else { return eachWord.substring(eachWord.indexOf(vowelsArray[0])) + 
+        eachWord.substring(0,eachWord.indexOf(vowelsArray[0]))+"ay"
+        
+      }     
+      // We want to return the constant starting with its first vowel.
+      //Then add the firsat part of word up untile the first vowel to the end of the string and then add ay.
       // ACTION ITEM: this return will be the output of your Pig Latin'd code
-      return eachWord 
-    })
+      return eachWord})
 
     // NO MODIFICATION NEEDED: once the code has been modified it gets joined from an array back to a string
     const translatedWords = translatedWordsArray.join(" ")
