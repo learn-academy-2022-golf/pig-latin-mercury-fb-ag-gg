@@ -22,19 +22,19 @@ const App = () => {
       // NO MODIFICATION NEEDED: this code will look at each word and identify the vowels
       const vowelsArray = eachWord.split("").filter(vowel => {
         return (
-          vowel === "a" || 
-          vowel === "e" || 
-          vowel === "i" || 
-          vowel === "o" || 
-          vowel === "u"
+          vowel === "a" || vowel === "e" || vowel === "i" || vowel === "o" || vowel === "u"
         )
       })
       console.log("vowelsArray:", vowelsArray)
 
+    // Use arrayOfUserInput with input words
+      // If word begins with a vowel, add "way at the end"
+        // Use conditional statement & indexing to check if first letter is a vowel
+
       // ACTION ITEM: your Pig Latin logic goes here!
-
-    
-
+      if (eachWord[0] === vowelsArray[0]) {
+        return eachWord + "way"
+      }
       // ACTION ITEM: this return will be the output of your Pig Latin'd code
       return eachWord
     })
